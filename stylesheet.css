@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Jost', sans-serif;
 }
 
 body{
@@ -31,29 +32,35 @@ body{
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.5fr;
     border-radius: 1rem;
+    border: 1px solid black;
 }
 
-.top{
+.postTop{
     display: grid;
     grid-template-columns: 1fr 2fr 0.5fr;
-    
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
 }
 
-.topLeft{
+.postTopLeft{
     display: grid;
     grid-template-columns: 0.3fr 1fr;
 }
 
-.userPostPhoto{
+.postTopUserPhoto{
     height: 2.5rem;
     border-radius: 50%;
     opacity: 75%;
-    justify-self: center;
-    align-self: center;
     padding: 5px;
 }
 
-.userPhoto{
+.postTopLeftUserPhotoContainener{
+    justify-self: center;
+    align-self: center;
+}
+
+.topTabUserPhoto{
     height: 3rem;
     border-radius: 50%;
     opacity: 75%;
@@ -61,17 +68,17 @@ body{
     align-self: center;
 }
 
-.userPhoto:hover{
+.topTabUserPhoto{
     opacity: 100%;
     transition: ease 0.2s;
 }
 
-.postTab{
+.topTab{
     display: grid;
     grid-template-columns: 0.5fr 2fr 1fr;
 }
 
-.postTabUserPhoto{
+.topTabUserPhotoContainer{
     justify-self: center;
     align-self: center;
 }
@@ -109,6 +116,7 @@ body{
     justify-self: center;
     align-self: center;
     color: white;
+    font-size: 1rem;
 }
 
 #POSTBTN:hover{
@@ -117,14 +125,14 @@ body{
 }
 
 hr.mainLine{
-    border-top: 3px dotted rgb(188, 188, 188);
+    border-top: 3px solid rgba(188, 188, 188, 0.577);
     border-left: none ;
     border-right: none ;
     border-bottom: none ;
     
   }
 
- .nameDisc{
+ .nameAndDisc{
     padding: 5px;
  } 
 
@@ -134,5 +142,36 @@ hr.mainLine{
 
  .time{
     color: rgb(109, 109, 109);
-    font-size: 12   px;
+    font-size: 11.5px;
  }
+
+ .mid{
+    padding-left: 1.2rem;
+    font-size: 2rem;
+    border-top: 1px black solid;
+ }
+
+ .mid p{
+    padding-top: 1rem;
+ }
+
+ .bottom{
+    display: grid;
+    grid-template-columns: 0.1fr 0.5fr 1fr;
+    padding: 1rem;
+    border-top: 1px black solid;
+ }
+
+ .bottom img{
+    height: 1.5rem;
+    margin-right: 1rem;
+ }
+
+ .topRight{
+    justify-self: center;
+    align-self: center;
+ }
+
+.topRight img{
+    height: 1.5rem;
+}
